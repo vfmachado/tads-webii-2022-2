@@ -1,0 +1,37 @@
+PATTERN MVC
+
+MODEL
+    * ENTIDADES 
+    * FUNCIONALIDADES VINCUALDAS AO BANCO
+    * LOGICA DO NEGÓCIO / DOMÍNIO DA APLICAÇÃO
+
+VIEW
+    * DEVOLUTIVA DA RESPOSTA
+
+CONTROLLER
+    ENTRADA => DADO QUE CHEGA EM UMA REQUISICAO HTTP
+        QUERY PARAMETER (? LA NA URL)
+        REQUEST BODY  (POST)
+        PARAMETRO DE URL (VARIAVEL DENTRO DA URL : NO EXPRESS)
+
+    TRATAMENTO / LOGICA
+        CONSULTA NO BANCO
+        INSERCAO
+        VALIDACAO
+        LOGICA
+        CONTINHAS
+
+    RESPOSTA
+        * APIs => JSON
+        * SSR => SERVER SIDE RENDERING => HTML
+
+e o routes? FICA PROXIMO DO CONTROLLER.
+
+
+PARA AS VIEWS
+    instalar o EJS
+    npm i ejs
+
+    no index.js (ponto de entrada da aplicacao)
+    vamo configurar o express para apontar para o local onde estao as views
+
