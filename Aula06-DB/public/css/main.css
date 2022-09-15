@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid gray;  */
+}
+
+
+.container {
+    display: flex;
+}
+
+nav ul{
+    height: 100%;
+    list-style: none;
+}
+
+li {
+    height: 40px;
+    width: 200px
+}
+
+li:hover {
+    background-color: lightgray;
+}
+
+main {
+    max-width: 90%;
+}
+
+.user-card {
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 150px;
+    width: 80px;
+    text-align: center;
+    background-color: lightgray;   
+    margin: 15px;
+}
+
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+}

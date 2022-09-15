@@ -1,0 +1,9 @@
+<a href="/users/<%= user.id %>"  class="user-card">
+    <% if (user.img_url) { %>
+        <img src="<%= user.img_url %>" width="100%" alt="">
+    <% } else { %>
+    <%= user.name %>
+    <br>
+    <%= user.cpf %>
+    <% } %>
+</a>

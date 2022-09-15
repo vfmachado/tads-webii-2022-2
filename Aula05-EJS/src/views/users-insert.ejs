@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <div class="container">
+    
+    <%- include('./includes/navbar') %>
+    
+    <main>
+        <h1>ADICAO DE USUARIO</h1>
+        <form action="/users/" method="post">
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf">
+            <br>
+            <label for="name">NAME</label>
+            <input type="text" name="name">
+            <br>
+            <button type="submit">VAI</button>
+        </form>
+    
+    </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+CONEXAO COM BANCO DE DADOS
+
+    sqlite
+
+NECESSARIO
+    npm install sqlite3
+
+
+SUGERIDO
+    browsersqlite.org => visualizador de bancos compativel com o sqlite
+
+CONEXAO
+    const sqlite3 = require('sqlite3').verbose();
+    const db = new sqlite3.Database(':memory:');
+    module.exports = db;
+                            // trocar :memory pelo nome do arquivo
+
+    EM OUTRAS PARTES DO SISTEMA SERÁ POSSIVEL UTILIZA O DB (CONEXAO COM O BANCO DE DADOS);
+
+    // O CAMINHO APONTANDO PARA O BANCO DEVE SER ABSOLUTO
+    const path = __dirname + '/../../database.db';
