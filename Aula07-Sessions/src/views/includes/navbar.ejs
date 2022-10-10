@@ -1,0 +1,18 @@
+<nav>
+    <ul>
+        <% if (locals.name) { %>
+            <li>Olá, <%= name %></li>
+        <% } else { %>
+            <a href="/login.html"><li>ENTRAR</li></a>
+        <% } %>
+
+        <a href="/"><li>HOME</li></a>
+        <a href="/users"><li>LISTAGEM</li></a>
+        <a href="/users/add"><li>INSERIR</li></a>
+
+        <% if (locals.name) { %>
+            <a href="/logout"><li>SAIR</li></a>
+        <% } %>
+        
+    </ul>
+</nav>
