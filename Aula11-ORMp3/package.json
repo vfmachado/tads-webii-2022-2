@@ -5,16 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index"
-
+    "dev": "nodemon src/index",
+    "start": "NODE=PROD node src/index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.1256.0",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.20",
     "pg": "^8.8.0",
-    "sequelize": "^6.25.5"
+    "sequelize": "^6.25.5",
+    "sqlite3": "^5.1.2"
   }
 }
