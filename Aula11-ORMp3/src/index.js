@@ -22,7 +22,10 @@ const { UsersController } = require('./controllers/UsersController');
 
 const usersController = new UsersController();
 
+app.post('/users', (req, res) => usersController.create(req, res));
 app.get('/users', (req, res) => usersController.list(req, res));
+
+app.get('/age', (req, res) => usersController.age(req, res));
 
 app.post('/image', 
 upload.single('image'),
